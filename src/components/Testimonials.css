@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: #3c4a5f;
+}
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-container {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.testimonial-container {
+  background-color: #f3f8fe;
+  height: 790px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.testimonial-wrapper {
+  height: 650px;
+  width: 90%;
+  background-color: white;
+  border-top-left-radius: 500px;
+  border-bottom-left-radius: 500px;
+}
+
+.message-container {
+  margin-top: 6em;
+  margin-left: 12em;
+  margin-right: 6em;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 10px;
+  letter-spacing: 1.5px;
+}
+
+.message-title {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.testimonial-message {
+  margin-top: 25px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.designation-wrapper {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.designation {
+  font-size: 18px;
+}
+
+.story-link {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  color: #2d67da;
+}
+
+.pagination {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar-link {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-link img {
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+.avatar {
+  border-radius: 100px;
+  height: 80px;
+}
+
+.active {
+  border: 5px solid #0450d5;
+  padding: 5px;
+  height: 70px;
+  width: 70px;
+}
+
+.pagination-buttons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f8fe;
+  height: 80px;
+  width: 80px;
+  border-radius: 100px;
+  text-decoration: none;
+  color: #3c4a5f;
+}
+
+.left-arrow {
+  margin-right: 4px;
+}
+
+.right-arrow {
+  margin-left: 4px;
+}
+
+.slides {
+  display: flex;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  height: 100%;
+  width: 100%;
+  margin-right: 50px;
+  border-radius: 10px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+.avatar-link > a {
+  display: inline-flex;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .testimonial-container {
+    height: 92%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .testimonial-wrapper {
+    height: 100%;
+    width: 100%;
+  }
+  .title {
+    margin-left: 2em;
+  }
+  .message-container {
+    margin-top: 1em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .message-title {
+    font-size: 24px;
+    margin-top: 14px;
+  }
+  .testimonial-message {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .designation-wrapper {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+  }
+  .designation {
+    font-size: 14px;
+  }
+  .story-link {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+  .slides {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .pagination {
+    margin-top: -30px;
+    display: block;
+  }
+  .avatar-link {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  .avatar {
+    height: 60px;
+  }
+  .active {
+    height: 50px;
+    width: 50px;
+  }
+  .pagination-buttons {
+    justify-content: space-between;
+    margin: 0;
+  }
+  .arrow {
+    height: 50px;
+    width: 50px;
+  }
+  svg {
+    height: 40px;
+    width: 40px;
+  }
+}
